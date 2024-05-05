@@ -9,5 +9,5 @@ def kur_al(birim):
 
     soup= BeautifulSoup(site_icerik,"html.parser")
 
-    return soup.find("div",class_="YMlKec fxKbKc").get_text()
+    return (soup.find("div",class_="YMlKec fxKbKc").get_text(),soup.find("div",class_="JwB6zf").get_text())
 
